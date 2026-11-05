@@ -2,7 +2,7 @@
 
 Site pessoal de apresentação dos meus serviços como desenvolvedor full stack.
 
-**🔗 Online:** _adicione o link aqui depois do deploy_
+**🔗 Online:** [portfolio-eta-seven-k26bbsdrld.vercel.app](https://portfolio-eta-seven-k26bbsdrld.vercel.app)
 
 ## Destaques
 

@@ -14,7 +14,7 @@ const PROJECTS = [
       en: "Barbershop website with 4-step online booking: customers pick a service, a barber and a free time slot, and the confirmation goes straight to the shop's WhatsApp.",
     },
     stack: ["React", "TypeScript", "Tailwind", "Vite"],
-    demo: null, // cole aqui o link da Vercel depois do deploy
+    demo: "https://navalha-barbearia-xi.vercel.app",
     repo: "https://github.com/LucasZanotto/navalha-barbearia",
   },
   {
@@ -27,7 +27,7 @@ const PROJECTS = [
       en: "Digital menu for a burger & pizza place: search, sizes and add-ons, a cart with free-delivery threshold and the full order sent to the store's WhatsApp.",
     },
     stack: ["React", "TypeScript", "Tailwind", "Vite"],
-    demo: null, // cole aqui o link da Vercel depois do deploy
+    demo: "https://sabor-da-casa-pink.vercel.app",
     repo: "https://github.com/LucasZanotto/sabor-da-casa",
   },
   {
@@ -40,7 +40,7 @@ const PROJECTS = [
       en: "Booking SaaS for small businesses: authentication, per-business accounts, calendar with status flow, customer history and a revenue dashboard.",
     },
     stack: ["Next.js", "TypeScript", "PostgreSQL", "Drizzle", "Tailwind"],
-    demo: null, // cole aqui o link da Vercel depois do deploy
+    demo: "https://agendafacil-beta-murex.vercel.app",
     repo: "https://github.com/LucasZanotto/agendafacil",
   },
 ];
