@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucas Zanotto — Desenvolvedor Full Stack</title>
+  <meta name="description" content="Sites, landing pages e sistemas web sob medida para negócios que querem vender mais. Orçamento grátis pelo WhatsApp.">
+  <meta property="og:title" content="Lucas Zanotto — Desenvolvedor Full Stack">
+  <meta property="og:description" content="Sites, landing pages e sistemas web sob medida para negócios que querem vender mais.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b0d12">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="Lucas Zanotto — início">
+        <span class="logo-mark">LZ</span>
+        <span class="logo-text">Lucas Zanotto</span>
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#servicos" data-i18n="nav.services">Serviços</a>
+        <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+        <a href="#processo" data-i18n="nav.process">Como funciona</a>
+        <a href="#faq" data-i18n="nav.faq">Dúvidas</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="lang" id="langToggle" type="button" aria-label="Mudar idioma / Change language">EN</button>
+        <a class="btn btn-sm btn-primary js-wa" href="#contato" data-i18n="nav.cta">Orçamento grátis</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span> <span data-i18n="hero.eyebrow">Disponível para novos projetos</span></p>
+          <h1 data-i18n="hero.title">Sites e sistemas que <span class="grad">trazem clientes</span> para o seu negócio.</h1>
+          <p class="lead" data-i18n="hero.lead">Sou Lucas Zanotto, desenvolvedor full stack. Crio sites, landing pages e sistemas web sob medida — rápidos, bonitos no celular e feitos para vender.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary js-wa" href="#contato">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+              <span data-i18n="hero.cta1">Pedir orçamento no WhatsApp</span>
+            </a>
+            <a class="btn btn-ghost" href="#projetos" data-i18n="hero.cta2">Ver projetos</a>
+          </div>
+          <ul class="hero-proof">
+            <li><strong data-i18n="proof.1a">Resposta rápida</strong><span data-i18n="proof.1b">no mesmo dia</span></li>
+            <li><strong data-i18n="proof.2a">100% sob medida</strong><span data-i18n="proof.2b">sem template pronto</span></li>
+            <li><strong data-i18n="proof.3a">Suporte incluso</strong><span data-i18n="proof.3b">30 dias após a entrega</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i><span>seunegocio.com.br</span></div>
+            <div class="window-body">
+              <div class="mock-nav"><b></b><span></span><span></span><span></span></div>
+              <div class="mock-hero">
+                <div class="mock-lines"><span class="w80"></span><span class="w60"></span><span class="w40 muted"></span><em></em></div>
+                <div class="mock-img"></div>
+              </div>
+              <div class="mock-cards"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="code-card">
+<pre><code><span class="k">const</span> cliente = <span class="k">await</span> <span class="f">agendar</span>({
+  servico: <span class="s">'corte'</span>,
+  horario: <span class="s">'14:30'</span>,
+});
+<span class="c">// ✓ confirmado no WhatsApp</span></code></pre>
+          </div>
+          <div class="toast-card">
+            <span class="toast-icon"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <span class="toast-text"><strong data-i18n="hero.toastT">Novo pedido recebido</strong><small data-i18n="hero.toastD">pelo site · agora</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="stack" aria-label="Tecnologias">
+      <div class="container stack-inner">
+        <span class="stack-label" data-i18n="stack.label">Tecnologias que uso</span>
+        <ul>
+          <li>React</li><li>Next.js</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>MySQL</li><li>PostgreSQL</li><li>Tailwind</li><li>Python</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="services.kicker">Serviços</p>
+          <h2 data-i18n="services.title">O que eu posso fazer pelo seu negócio</h2>
+          <p class="sub" data-i18n="services.sub">Do site que aparece no Google ao sistema que organiza o dia a dia — você fala o problema, eu entrego a solução funcionando.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card service">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8M12 18v3"/></svg></div>
+            <h3 data-i18n="s1.t">Sites e landing pages</h3>
+            <p data-i18n="s1.d">Página profissional, rápida e otimizada para o Google, com botão direto para o seu WhatsApp.</p>
+            <ul class="ticks"><li data-i18n="s1.l1">Design responsivo</li><li data-i18n="s1.l2">SEO básico incluso</li><li data-i18n="s1.l3">Domínio e hospedagem</li></ul>
+          </article>
+          <article class="card service">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></div>
+            <h3 data-i18n="s2.t">Sistemas e painéis</h3>
+            <p data-i18n="s2.d">Agendamento, controle de pedidos, estoque ou clientes — um sistema feito para a sua rotina.</p>
+            <ul class="ticks"><li data-i18n="s2.l1">Login e permissões</li><li data-i18n="s2.l2">Relatórios e gráficos</li><li data-i18n="s2.l3">Acesso pelo celular</li></ul>
+          </article>
+          <article class="card service">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+            <h3 data-i18n="s3.t">APIs e integrações</h3>
+            <p data-i18n="s3.d">Conecto seu sistema a pagamentos, WhatsApp, planilhas e outras ferramentas para automatizar tarefas.</p>
+            <ul class="ticks"><li data-i18n="s3.l1">Node.js e REST</li><li data-i18n="s3.l2">Pix e pagamentos</li><li data-i18n="s3.l3">Automações</li></ul>
+          </article>
+          <article class="card service">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4 2.5-2.5Z"/></svg></div>
+            <h3 data-i18n="s4.t">Manutenção e melhorias</h3>
+            <p data-i18n="s4.d">Seu site está lento, quebrado ou desatualizado? Eu corrijo, modernizo e deixo funcionando.</p>
+            <ul class="ticks"><li data-i18n="s4.l1">Correção de bugs</li><li data-i18n="s4.l2">Mais velocidade</li><li data-i18n="s4.l3">Novas funções</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-alt" id="projetos">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="projects.kicker">Projetos</p>
+          <h2 data-i18n="projects.title">Trabalhos recentes</h2>
+          <p class="sub" data-i18n="projects.sub">Projetos completos, do design ao código, com demonstração online para você testar.</p>
+        </div>
+        <div class="projects" id="projectList"><!-- preenchido por main.js --></div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="processo">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="process.kicker">Como funciona</p>
+          <h2 data-i18n="process.title">Do primeiro contato ao site no ar</h2>
+        </div>
+        <ol class="steps">
+          <li><span class="step-n">01</span><h3 data-i18n="p1.t">Conversa</h3><p data-i18n="p1.d">Você me conta sobre o seu negócio e o que precisa. Sem compromisso.</p></li>
+          <li><span class="step-n">02</span><h3 data-i18n="p2.t">Proposta</h3><p data-i18n="p2.d">Envio escopo, prazo e preço fechados. Nada de surpresa no final.</p></li>
+          <li><span class="step-n">03</span><h3 data-i18n="p3.t">Desenvolvimento</h3><p data-i18n="p3.d">Você acompanha o progresso e pede ajustes durante o caminho.</p></li>
+          <li><span class="step-n">04</span><h3 data-i18n="p4.t">Entrega e suporte</h3><p data-i18n="p4.d">Coloco no ar, te ensino a usar e dou 30 dias de suporte.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container narrow">
+        <div class="section-head center">
+          <p class="kicker" data-i18n="faq.kicker">Dúvidas</p>
+          <h2 data-i18n="faq.title">Perguntas frequentes</h2>
+        </div>
+        <div class="faq">
+          <details><summary data-i18n="f1.q">Quanto custa um site?</summary><p data-i18n="f1.a">Depende do tamanho e das funções. Uma landing page simples sai bem mais em conta que um sistema completo. Me chame no WhatsApp e eu te passo um orçamento fechado, sem compromisso.</p></details>
+          <details><summary data-i18n="f2.q">Quanto tempo leva?</summary><p data-i18n="f2.a">Uma landing page fica pronta em cerca de 1 semana. Sistemas maiores levam de 3 a 6 semanas, dependendo do escopo.</p></details>
+          <details><summary data-i18n="f3.q">Preciso já ter domínio e hospedagem?</summary><p data-i18n="f3.a">Não. Eu te ajudo a registrar o domínio (.com.br) e cuido da publicação do site.</p></details>
+          <details><summary data-i18n="f4.q">Consigo alterar o conteúdo depois?</summary><p data-i18n="f4.a">Sim. Posso deixar um painel para você editar textos e fotos, ou fazer as alterações para você.</p></details>
+          <details><summary data-i18n="f5.q">Atende fora da minha cidade?</summary><p data-i18n="f5.a">Sim. Atendo todo o Brasil e também clientes de fora, tudo online.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="contact">
+          <div class="contact-copy">
+            <p class="kicker" data-i18n="contact.kicker">Contato</p>
+            <h2 data-i18n="contact.title">Vamos tirar seu projeto do papel?</h2>
+            <p class="sub" data-i18n="contact.sub">Conte rapidamente o que você precisa. A mensagem abre direto no meu WhatsApp.</p>
+            <ul class="contact-list">
+              <li><a class="js-wa" href="#contato"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12Z"/></svg>WhatsApp</a></li>
+              <li><a href="mailto:ottonazreverse@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>ottonazreverse@gmail.com</a></li>
+              <li><a href="https://github.com/LucasZanotto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M9 19c-4 1.5-4-2-6-2.5m12 5v-3.5a3 3 0 0 0-.9-2.4c3-.3 6.1-1.4 6.1-6.6a5.1 5.1 0 0 0-1.4-3.5 4.8 4.8 0 0 0-.1-3.5s-1.1-.3-3.6 1.4a12.4 12.4 0 0 0-6.4 0C6.2 1.7 5.1 2 5.1 2a4.8 4.8 0 0 0-.1 3.5 5.1 5.1 0 0 0-1.4 3.5c0 5.2 3.1 6.3 6.1 6.6a3 3 0 0 0-.9 2.4V22"/></svg>github.com/LucasZanotto</a></li>
+            </ul>
+          </div>
+          <form class="card form" id="contactForm">
+            <label><span data-i18n="form.name">Seu nome</span><input name="nome" required autocomplete="name"></label>
+            <label><span data-i18n="form.type">Tipo de projeto</span>
+              <select name="tipo">
+                <option data-i18n="form.o1">Site / landing page</option>
+                <option data-i18n="form.o2">Sistema / painel</option>
+                <option data-i18n="form.o3">Integração / API</option>
+                <option data-i18n="form.o4">Manutenção</option>
+                <option data-i18n="form.o5">Outro</option>
+              </select>
+            </label>
+            <label><span data-i18n="form.msg">Conte um pouco sobre o projeto</span><textarea name="msg" rows="4" required></textarea></label>
+            <button class="btn btn-primary btn-block" type="submit" data-i18n="form.send">Enviar pelo WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Lucas Zanotto · <span data-i18n="footer.role">Desenvolvedor Full Stack</span></span>
+      <a href="#top" data-i18n="footer.top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <a class="wa-float js-wa" href="#contato" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
